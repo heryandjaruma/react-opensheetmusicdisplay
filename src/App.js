@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     // Don't call this.setState() here!
-    this.state = { file: "MuzioClementi_SonatinaOpus36No1_Part2.xml" };
+    this.state = { file: "BNBK_1_MM.xml" };
   }
 
   handleClick(event) {
@@ -23,6 +23,7 @@ class App extends Component {
           <h1 className="App-title">OpenSheetMusicDisplay in React</h1>
         </header>
         <select onChange={this.handleClick.bind(this)}>
+          <option value="BNBK_1_MM.xml">BNBK_1</option>
           <option value="MuzioClementi_SonatinaOpus36No1_Part2.xml">Muzio Clementi: Sonatina Opus 36 No1 Part2</option>
           <option value="Beethoven_AnDieFerneGeliebte.xml">Beethoven: An Die FerneGeliebte</option>
         </select>
